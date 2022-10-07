@@ -24,6 +24,7 @@ public class TasksTest {
 	public WebDriver acessarAplicacao() throws MalformedURLException {
 //		WebDriver driver = new ChromeDriver();
 //		DesiredCapabilities cap = DesiredCapabilities.chrome();
+		System.setProperty("webdriver.chrome.driver","C:\\Program Files (x86)\\Selenium\\drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("http://localhost:8001/tasks");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
